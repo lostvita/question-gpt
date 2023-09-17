@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import Question from './pages/Question'
+import Records from './pages/Records'
+import Questions from './pages/Questions'
 import Dashboard from './pages/Dashboard'
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/question' element={<Question />} />
+        <Route path='/records' element={<Records />} />
+        <Route path='/questions' element={<Questions />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='*' element={<Home />} />
       </Routes>
